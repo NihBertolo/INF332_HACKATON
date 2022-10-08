@@ -1,0 +1,17 @@
+spring:
+  data:
+    mongodb:
+      database: medsolution
+      uri: mongodb+srv://equipe8:inf332@cluster0.nco56aq.mongodb.net/?retryWrites=true&w=majority
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+server:
+  port : 8085
+rest-client:
+  bulario:
+    base-url: "https://bula.vercel.app"
+    pesquisar-path: "/pesquisar"
+    categorias-path: "/categorias"
+    pesquisar-por-categoria-path: "/medicamentos"
+    pesquisar-medicamento: "/medicamento/{id}"
